@@ -1,0 +1,396 @@
+
+@media (min-width: 994px) {
+    #feedback_two {
+        display: none;
+    }
+    #type_two{
+        display: none;
+    }
+    
+    
+}
+
+
+
+.section_header {
+    text-align: center;
+    justify-content: center;
+}
+
+.change {
+    color: #ffe74f;
+}
+
+.all_title {
+    text-transform: uppercase;
+    margin: 3rem auto;
+}
+
+hr {
+    background: #ffe74f;
+    width: 25%;
+    height: 1px;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+
+/*-----------------Nav-------------------*/
+header{
+    background-color: #ffdc00;
+    padding: 15px 0; 
+}
+.logo h2 {
+    background-color: #ffdc00;
+   
+    text-align: left;
+    text-transform: uppercase;
+    font-weight:lighter;
+    
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.justtext {
+    font-size: 15px;
+    color: #9a8e5b;
+}
+
+.phone_number {
+    text-align: right;
+}
+
+.button_call {
+    border: none;
+    color: #d9d9d9;
+    background-color: #333;
+    padding: 7px 30px;
+    border-radius:  10px; 
+    opacity: 1;
+
+}
+
+
+
+
+/*-----------------Main page-------------------*/
+
+.beetwenline {
+    padding-bottom: 2rem;
+}
+
+#main {
+    background: url(../image/main.jpg) no-repeat;
+    font-weight: 100%;
+    height: 100vh;
+    color: #fff;
+    padding-top: 5rem;
+}
+
+      /*----------------------<Timer>-----------------*/
+
+.timer {
+    margin: 3rem 0;
+    margin-left: -15px;
+}
+
+
+.countdown-title {
+  color: #333;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+ 
+.countdown {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+ 
+.countdown-number {
+  padding: 10px 10px;
+  border-radius: 4px;
+  background: #333;
+  display: inline-block;
+}
+
+.countdown-colon {
+  padding: 5px 5px;
+  
+  display: inline-block;
+}
+
+.colon_background {
+  padding: 8px 8px;
+  border-radius: 50%;
+  background: #333;
+  display: inline-block;
+  border: none;
+}
+
+.colon {
+    margin: 0.5rem 0;
+}
+
+.main_btn {
+    color: #333;
+    padding: 15px 75px;
+    background: #ffdc00;
+    border-radius: 5px;
+    border-color:#ffdc00; 
+    box-shadow: 0 3px 0 #b9a000;
+    transition: .2s;
+}
+
+.mainmirror, .howmuch {
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+
+
+/*------------ <-- ABOUT Product --> -----------------*/
+
+.card {
+    border: 0;
+    margin: 0.5rem 0;
+}
+
+
+.p15px {
+    margin: 0.5rem 0;
+    font-size: 15px;
+}
+
+.p12px {
+    color: #b6b6b6;
+    margin-bottom: 2rem;
+    font-style: oblique;
+}
+
+.img_center, .box_center {
+    justify-content: center;
+    
+    
+}
+
+
+
+/*<!--Page where you can see why do you need it -->*/ 
+
+
+
+.why_we {
+    align-items: baseline;
+    text-align: center;
+    margin-top: 5rem;
+    
+    
+   
+}
+
+.p20px {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+
+
+
+
+/*<!-- HOW DO YOU SAVE your money?-->*/
+
+.save_many {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.img_broke_bumper {
+    width: 467px;
+}
+
+
+/*<!------------Feeback -------------> */
+
+
+.feedback {
+    justify-content: flex-end;    
+}
+
+
+.img_circle {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* ---------<!-- SUPPORT and WARRANTY-->--------*/
+
+
+.guarantee {
+    margin: 2rem 0;
+}
+
+ul {
+    margin-left: -35px;
+}
+
+li {
+    margin-right: 1rem;
+    
+}
+
+.p_ul {
+    margin-left: 1rem;
+}
+
+.plus {
+    font-size: 60px;
+    color: #ffdc00;
+    justify-content: center;
+    
+}
+
+.sale {
+    position: relative;
+}
+
+.price {
+    position: relative;
+    top: -100px;
+    right: -150px;
+    margin-bottom: 2rem;
+}
+
+
+input[type=text]{
+    padding: 2rem;
+    margin: 1rem 0;
+    border-color: black;
+}
+
+
+
+form {
+    width: 75%;
+    
+}
+
+
+
+
+/*----------------@media--------------------*/
+
+
+@media (max-width: 993px) {
+    
+    #main {
+        height: 100%;
+        padding: 0;
+    }
+   
+    
+    .row {
+        
+        justify-content: center;
+    }
+    
+    .beetwenline {
+        margin-top: 2rem;
+    }
+    
+    .mirror_with_price {
+        margin-top: 3rem;
+    }
+    
+    .first_howmuch {
+        position: relative;
+        top: -130px;
+        left: 130px;
+    }
+    
+    #feedback {
+        display:none; 
+
+    }
+    
+    
+    .right {
+        text-align: right;
+    }
+    
+    .price {
+        top: -100px;
+        left: -50px;
+    }
+    
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    
+    #type {
+        display: none;
+    }
+    
+    hr {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 20%;
+
+    }
+    
+    .card {
+    border: 0;
+    margin: 0.5rem 0;
+    }
+
+
+    .p15px {
+        margin: 0.2rem 0;
+        font-size: 15px;
+    }
+
+    .p12px {
+        color: #b6b6b6;
+        margin-bottom: 0.5rem;
+        font-style: oblique;
+    }
+
+    .img_center, .box_center {
+        justify-content: center;
+    }
+    
+    .price {
+        top: -55px;
+        left: 60px;
+    }
+    
+    
+    
+    
+        
+}
+
+
+
+
+
+
+
+
+
