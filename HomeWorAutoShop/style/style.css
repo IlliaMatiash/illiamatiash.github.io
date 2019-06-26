@@ -288,6 +288,13 @@ form {
     
 }
 
+/*----------------footer--------------------*/
+
+.footer {
+    margin-top: 2rem;
+    height: 100px;
+    background-color: #333;
+}
 
 
 
