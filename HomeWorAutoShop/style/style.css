@@ -294,12 +294,15 @@ form {
     color: aliceblue;
     margin-top: 2rem;
     background-color: #333;
+    text-align: center;
 }
 
 .p_footer {
     margin-top: 1rem;
     font-size: 20px;
 }
+
+
 
 
 
