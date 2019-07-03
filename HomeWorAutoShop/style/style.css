@@ -104,7 +104,7 @@ header{
   margin: 40px 0px 20px;
 }
  
-.countdown {
+.countdown_attribute {
   font-family: sans-serif;
   color: #fff;
   display: inline-block;
@@ -291,9 +291,14 @@ form {
 /*----------------footer--------------------*/
 
 .footer {
+    color: aliceblue;
     margin-top: 2rem;
-    height: 100px;
     background-color: #333;
+}
+
+.p_footer {
+    margin-top: 1rem;
+    font-size: 20px;
 }
 
 
