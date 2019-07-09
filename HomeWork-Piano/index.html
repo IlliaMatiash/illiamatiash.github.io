@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Piano</title>
+    
+    <!--Bootstrap -->
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+   
+</head>
+<body>
+ 
+
+
+<!--
+<div class="container">
+    <div class="row piano">
+
+-->
+
+
+<!--
+        <div class="myAudio">
+            <audio  source src="piano-master/1.mp3" class='key'></audio>
+            <audio  source src="piano-master/2.mp3" class='key'></audio>
+            <audio  source src="piano-master/3.mp3" class='key'></audio>
+            <audio  source src="piano-master/4.mp3" class='key'></audio>
+            <audio  source src="piano-master/5.mp3" class='key'></audio>
+            <audio  source src="piano-master/6.mp3" class='key'></audio>
+            <audio  source src="piano-master/7.mp3" class='key'></audio>
+            <audio  source src="piano-master/8.mp3" class='key'></audio>
+        </div>
+-->
+        
+<!--
+        <div class="keys">
+            <button class="white" class='key'><span>A</span></button>
+            <button class="black">W</button>
+            <button class="white" key='2'>S</button>
+            <button class="black">E</button>
+            <button class="white" key='3'>D</button>
+
+            <button class="white" key='4'>F</button>
+            <button class="black ">R</button>
+            <button class="white" key='5'>G</button>
+            <button class="black">T</button>
+            <button class="white" key='6'>H</button>
+            <button class="black">Y</button>
+            <button class="white" key='7'>J</button>
+
+            <button class="white" key='8'>K</button>
+
+        </div>
+-->
+        
+<!--
+    </div>
+</div>
+-->
+
+      <div class="container">
+          <div class="row piano">
+              <div class="keys">
+                    <button onclick="playAudio()" class="key white " data-key= "65" value="65" data-note= "a">
+                        <h3>A</h3>
+                    </button>
+                    <button onclick="playAudio()" class="key black" data-key= "83" data-note= "s">
+                        <h3 >S</h3>
+                    </button>
+                    <button class="key white" data-key= "68" data-note= "d">
+                        <h3>D</h3>
+                    </button>
+                    <button class="key black" data-key= "70" data-note= "f">
+                        <h3>F</h3>
+                    </button>
+                    <button class="key white" data-key= "71" data-note= "g">
+                        <h3>G</h3>
+                    </button>
+                    <button class="key black" data-key= "72" data-note= "h">
+                        <h3>H</h3>
+                    </button>
+                    <button  onclick="playAudio()" class="key white" data-key= "74" data-note= "j">
+                        <h3>J</h3>
+                    </button>
+                    <button onclick="playAudio()" class="key black" data-key= "75" data-note= "k">
+                        <h3>K</h3>
+                  </button>
+            </div>
+		</div>
+	</div>
+    
+   
+      <audio data-key="65" src="piano-master/1.mp3"></audio>
+      <audio data-key="83" src="piano-master/2.mp3"></audio>
+      <audio data-key="68" src="piano-master/3.mp3"></audio>
+      <audio data-key="70" src="piano-master/4.mp3"></audio>
+      <audio data-key="71" src="piano-master/5.mp3"></audio>
+      <audio data-key="72" src="piano-master/6.mp3"></audio>
+      <audio data-key="74" src="piano-master/7.mp3"></audio>
+      <audio data-key="75" src="piano-master/8.mp3"></audio>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<!--
+      <div class="container">
+		<div class="key" data-key= "65" data-note= "a">
+			<h3>A</h3>
+		</div>
+		<div class="key"data-key= "83" data-note= "s">
+			<h3 >S</h3>
+		</div>
+		<div class="key"data-key= "68" data-note= "d">
+			<h3>D</h3>
+		</div>
+		<div class="key"data-key= "70" data-note= "f">
+			<h3>F</h3>
+		</div>
+		<div class="key"data-key= "71" data-note= "g">
+			<h3>G</h3>
+		</div>
+		<div class="key"data-key= "72" data-note= "h">
+			<h3>H</h3>
+		</div>
+		<div class="key"data-key= "74" data-note= "j">
+			<h3>J</h3>
+		</div>
+		<div class="key"data-key= "75" data-note= "k">
+			<h3>K</h3>
+		</div>
+	</div>
+-->
+
+      
+      
+
+      
+      
+    
+    
+
+   
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/mian.js"></script>
+</body>
+</html>
