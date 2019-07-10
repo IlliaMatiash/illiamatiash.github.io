@@ -63,9 +63,15 @@ body:after {
     padding: 0;
 }
 
+.color_red {
+    color: red;
+}
+
+/*
 span {
  color: red;
 }
+*/
 
 /*------------------ Hamburger -------------*/
 
