@@ -1,9 +1,59 @@
+/*
+body{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffbe76;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-item {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.2s;
+    
+}
+*/
+
+
+
+
+
+
+
+
+
 .container{
 }
 .piano {
   justify-content: center;
   
   
+}
+
+.keys {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+
+.key {
+    transition: transform 0.2s;
+    
 }
 
 
@@ -14,7 +64,10 @@ button {
   list-style:none;
   position:relative;
   float:left;
-    transition: all .1s ease;
+/*    transition: all .1s ease;*/
+    transition: transform 0.2s;
+
+   
 }
 
 .white {
@@ -41,12 +94,24 @@ button {
     
 }
 .playing {
-    transform: scale(.95);
+/*    transform: scale(.95);*/
+/*
     border-color: #196151;
     box-shadow: 0 0 1rem #196151;
+*/
     
     
   }
+
+
+
+
+
+
+
+
+
+
 
 
 /*
