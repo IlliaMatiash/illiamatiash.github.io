@@ -2,10 +2,14 @@
 
 let pianoButtons = document.getElementById('keys');
 let audio = document.querySelectorAll('audio');
+let listKeyPiano = document.querySelectorAll('.key');
+
+
 pianoButtons.addEventListener('click', playPiano);
 function playPiano(event){
     if(event.target.classList.contains("key") ){
         let x = Number(event.target.id);
+        listKeyPiano[x-1].classList.add('animation');
         audio[x-1].currentTime = 0;
         audio[x-1].play();
     }
@@ -19,6 +23,7 @@ function playing(event){
     let keyBoard = event.keyCode;
     for(let i = 0; i <= keyBoards.length; i++){
         if(keyBoard == keyBoards[i-1]){
+            listKeyPiano[i-1].classList.add('animation');
             audio[i-1].currentTime = 0;
             audio[i-1].play();
             break;
@@ -26,37 +31,14 @@ function playing(event){
     }
 }
 
-
-    
-
-
- 
-
-
-        
+function removeTransition(e) {
+  if (e.propertyName !== "transform") return;
+  this.classList.remove("animation");
+}
+  listKeyPiano.forEach(key => key.addEventListener("transitionend",
+   removeTransition));
 
 
-
-
-
-
-
-//function playAudio(event){
-//    let x = event.target.classList.contains;
-//    if(event.target.classList.contains('1')) return;
-//    event.target.play();
-//    
-//    }
-
-//let buttonPiano = document.querySelectorAll('.key');
-//console.log(buttonPiano);
-
-//buttonPiano[0].addEventListener('mousemove', rotate);
-//
-//
-//function rotate(event){
-//    const this.
-//}
 
 
 
