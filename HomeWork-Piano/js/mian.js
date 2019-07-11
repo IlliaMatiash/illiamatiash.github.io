@@ -38,33 +38,58 @@
 //
 //
 //
-//let button = document.querySelectorAll('button');
-//console.log(button);
-//
-//button[0].addEventListener('mousemove', rotate);
-//
-//
-//function rotate(event){
-//    this.querySelector
-//    console.log("нажатие");
+
+
+//function serchClick(){
+
+    let pianoButtons = document.getElementById('keys');
+    let audio = document.querySelectorAll('audio');
+    pianoButtons.addEventListener('click', playPiano);
+
+
+    
 //}
 
-
-
-
-    let button = document.getElementById('keys');
-    let audio = document.querySelector('audio');
-   
-    button.onclick = function (event){
     
-//        if (!event.target.classList.contains('key')) return;
-//        button.getElementsByClassName('.key');
-        
-//        console.log("hello");
-        audio.play();
-    
+    function playPiano(event){
+        if(event.target.classList.contains("key") ){
+            let x = Number(event.target.id);
+
+            audio[x-1].play();
+        }
     }
+
+
+    let keyBoards = [65, 83, 68, 70, 71, 72, 74, 75];
+    addEventListener('keydown', playing);
+
+    function playing(event){
+        let keyBoard = event.keyCode;
+
+
+        for(let i = 0; i <= keyBoards.length; i++){
+
+            if(keyBoard == keyBoards[i-1]){
+                audio[i-1].currentTime = 0;
+               
+                audio[i-1].play();
+            break;
+            }
+        }
+    }
+
+
+    
+
+
+ 
+
+
         
+
+
+
+
 
 
 
@@ -74,6 +99,17 @@
 //    event.target.play();
 //    
 //    }
+
+//let buttonPiano = document.querySelectorAll('.key');
+//console.log(buttonPiano);
+
+//buttonPiano[0].addEventListener('mousemove', rotate);
+//
+//
+//function rotate(event){
+//    const this.
+//}
+
 
 
 

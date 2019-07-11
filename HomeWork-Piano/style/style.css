@@ -25,6 +25,7 @@ body{
     width: 250px;
     height: 250px;
     transition: transform 0.2s;
+    transform: rotateX(20deg);
     
 }
 */
@@ -40,24 +41,25 @@ body{
 .container{
 }
 .piano {
-  justify-content: center;
-  
+/*  justify-content: center;*/
+  perspective: 1000px;
+    transform-style: preserve-3d;
+/*
+    position:relative;
+  float:left;
+*/
   
 }
 
 .keys {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-
-.key {
-    transition: transform 0.2s;
     
 }
 
 
-button {
+
+
+
+button, .key {
 
   margin:0;
   padding:0;
@@ -65,9 +67,9 @@ button {
   position:relative;
   float:left;
 /*    transition: all .1s ease;*/
-    transition: transform 0.2s;
-
-   
+    
+     transition: transform 0.2s;
+     
 }
 
 .white {
@@ -79,10 +81,11 @@ button {
       border-bottom:1px solid #bbb;
       border-radius:0 0 5px 5px;
       box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
-      background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+      background:linear-gradient(to bottom,#eee 0%,#fff 100%);
 }
 
 .black {
+    display: block;
     height:8em;
   width:2em;
   margin:0 -1em 0 -1em;
@@ -93,6 +96,8 @@ button {
   background:linear-gradient(45deg,#222 0%,#555 100%)
     
 }
+
+
 .playing {
 /*    transform: scale(.95);*/
 /*
