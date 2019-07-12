@@ -1,9 +1,6 @@
-
-
 let pianoButtons = document.getElementById('keys');
 let audio = document.querySelectorAll('audio');
 let listKeyPiano = document.querySelectorAll('.key');
-
 
 pianoButtons.addEventListener('click', playPiano);
 function playPiano(event){
@@ -19,17 +16,28 @@ function playPiano(event){
 let keyBoards = [65, 83, 68, 70, 71, 72, 74, 75];
 addEventListener('keydown', playing);
 
+
+
+
 function playing(event){
-    let keyBoard = event.keyCode;
     for(let i = 0; i <= keyBoards.length; i++){
-        if(keyBoard == keyBoards[i-1]){
-            listKeyPiano[i-1].classList.add('animation');
-            audio[i-1].currentTime = 0;
-            audio[i-1].play();
-            break;
+        let keyBoarDown = event.keyCode;
+        const repeat = event.repeat;
+        if (repeat === true) return ;
+        if(keyBoarDown == keyBoards[i-1]){
+                
+                listKeyPiano[i-1].classList.add('animation');
+                audio[i-1].currentTime = 0;
+                audio[i-1].play();
+                break;
         }
     }
 }
+
+
+
+
+
 
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
@@ -37,11 +45,3 @@ function removeTransition(e) {
 }
   listKeyPiano.forEach(key => key.addEventListener("transitionend",
    removeTransition));
-
-
-
-
-
-
-
-
