@@ -99,7 +99,7 @@ function timer1() {
     }
 
     if (status_sw1 == 1) {
-        percent = setTimeout(timer1(), 1000 * interval);
+        percent = setTimeout(timer1, 1000 * interval);
         howMuchTime-= interval;
         let minut = Math.floor(howMuchTime/60);
         let second = (howMuchTime) - minut*60 ;
