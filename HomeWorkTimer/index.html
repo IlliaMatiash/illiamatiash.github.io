@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  
+  
+<!--
+   <div class="second">
+   <svg class="progress-ring">
+      <circle class="progress-ring__circle" cx="60" cy="60" r="52" >
+       </circle>
+   </svg>
+   <div >
+       <p class="table"></p>
+   </div>
+   <button type="button" class="stop">Stop</button>
+   <button type="button" class="start"><span class="text">Start</span></button>
+   
+   </div>
+   
+   <div class="hour">
+   <svg class="progress-ring">
+      <circle class="progress-ring__circle__two" cx="60" cy="60" r="52" >
+       </circle>
+   </svg>
+   <div >
+       <p class="table"></p>
+   </div>
+   <button type="button" class="stop">Stop</button>
+   <button type="button" class="start__one"><span class="text">Start</span></button>
+   
+   </div>
+-->
+
+
+<div class="container">
+    <div class="row">
+        <h1>STOPWATCH</h1>
+    </div>
+    
+    <div class="row">
+        
+        
+            <div class="col">
+               <div class="tablo">
+                 <h2 id="timerLabel1"></h2>  
+               </div>
+                
+                <br>
+                <div class="second">
+                   <svg class="progress-ring">
+<!--                     r = (width / 2) - (stroke-width  * 2)-->
+<!--                     r = (240 / 2) - (10 * 2)-->
+                      <circle class="progress-ring__circle" cx="120" cy="120" r="106" >
+                       </circle>
+                   </svg>
+                   </div>
+                <input class="btn first_timer" type="button" onclick="start_stop(this)" value="START" id="start1">
+            
+            </div>
+               <div class="col">
+               <div class="tablo">
+                   <h2 id="timerLabel2"></h2>
+               </div>
+                
+                <br>
+                <div class="second">
+                   <svg class="progress-ring">
+                      <circle class="progress-ring__circle__second" cx="120" cy="120" r="106" >
+                       </circle>
+                   </svg>
+                   </div>
+                   <input class="btn second_timer" type="button" onclick="start_stop(this)" value="START" id="start2">
+                
+            </div>
+            
+        
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn" onclick="location.href='index.html'" id="resetAllBtn">RESET</button>
+        </div>
+        <div class="col">
+            <input class="btn all" type="button" onclick="moveAll(this)" value="START" id="moveAllBtn">
+        </div>
+    </div>
+    
+        
+            
+            
+            
+        
+    
+</div>
+
+   
+   
+   
+    <script src="js/main.js"></script>
+</body>
+</html>

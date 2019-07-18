@@ -1,0 +1,61 @@
+
+* {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+}
+.
+h1 {
+    text-align: center;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col {
+    margin: 0 3rem;
+    text-align: center;
+}
+
+.tablo {
+    position: absolute;
+top: 36%;
+left: 35%;
+
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    background-color: lightskyblue;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+html, body {
+    background-color: #64B5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.progress-ring {
+    width: 240px;
+    height: 240px;
+}
+
+.progress-ring__circle, .progress-ring__circle__second {
+    stroke: white;
+    stroke-width: 7px;
+    fill: transparent;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: storke-dashoffset 0.3s;
+    stroke-dasharray: 50 10;
+   
+}
