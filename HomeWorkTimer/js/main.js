@@ -99,13 +99,11 @@ function timer1() {
     }
 
     if (status_sw1 == 1) {
-        percent = setTimeout(function(){timer1();
-        }, 1000 * interval);
+        percent = setTimeout(timer1(), 1000 * interval);
         howMuchTime-= interval;
         let minut = Math.floor(howMuchTime/60);
         let second = (howMuchTime) - minut*60 ;
         timerLabel1.innerHTML = minut + ":" + second;
-//        timerLabel1.innerHTML = howMuchTime;
         let offset = (circumference - (howMuchTime) / (firstTimer.howMuchTimes) * circumference);
         circle.style.strokeDashoffset = offset;  
     }
@@ -117,8 +115,7 @@ function timer2() {
         status_sw2 = 0;
     }
     if (status_sw2 == 1) {
-        secondPercent = setTimeout(function(){timer2();
-        }, 1000 * secondInterval);
+        secondPercent = setTimeout(timer2, 1000 * secondInterval);
         secondHowMuchTime-= secondInterval;
         time_sw2++;
         let minut = Math.floor(secondHowMuchTime/60);
