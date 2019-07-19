@@ -3,39 +3,24 @@ function startTimer(howMuchTimes,timeInterval, circles) {
     this.timeInterval = timeInterval;
     this.circles = circles;
 }
-
-
 let firstTimer = new startTimer(30, 1, document.querySelector('.progress-ring__circle'));
-// <--------- animation for first clock-------->
+//<--------- animation for first clock-------->
 let howMuchTime =  firstTimer.howMuchTimes;
 let interval = firstTimer.timeInterval;  
-const circle = firstTimer.circles;
-const radius = circle.r.baseVal.value;
-const circumference = 2 * Math.PI * radius;
-circle.style.strokeDashoffset = circumference;
-circle.style.strokeDasharray = `${circumference} ${circumference}`;
 let percent = 0;
 //<--------- animation for first clock-------->
-
 let secondTimer = new startTimer(6000, 2, document.querySelector('.progress-ring__circle__second'));
 // <--------- animation for second clock-------->
 let secondHowMuchTime = secondTimer.howMuchTimes;
 let secondInterval = secondTimer.timeInterval;
-const secondCircle = secondTimer.circles;
-const secondRadius = secondCircle.r.baseVal.value;
-const secondCircumference = 2 * Math.PI * secondRadius;
-secondCircle.style.strokeDashoffset = secondCircumference;
-secondCircle.style.strokeDasharray = `${secondCircumference} ${secondCircumference}`;
 let secondPercent = 0;
 // <--------- animation for second clock-------->
 
 let status_sw1 = 0;
 let status_sw2 = 0;
 
-
-let time_sw1 = 0;
-let time_sw2 = 0;
-
+let time_sw1 = firstTimer.howMuchTimes;
+let time_sw2 = secondTimer.howMuchTimes;;
 
 let startBtn1 = document.getElementById("start1");
 let startBtn2 = document.getElementById("start2");
@@ -51,9 +36,8 @@ function moveAll(obj) {
         status_sw2 = 1;
         timer1();
         timer2();
-//        document.getElementsByClassName(first_timer).innerText = STOP;
         startBtn1.value = "STOP";
-//        
+
         startBtn2.value = "STOP";
         obj.value = "STOP";
     } else {
@@ -65,12 +49,12 @@ function moveAll(obj) {
     }
 }
 
-
 function start_stop(obj) {
     let stopwatch = obj.id;
     if (stopwatch == 'start1') {
         if (status_sw1 == 0) {
             status_sw1 = 1;
+
             timer1();
         } else {
             status_sw1 = 0;
@@ -94,38 +78,44 @@ function start_stop(obj) {
 }
 
 function timer1() {
-    if(howMuchTime <= 0){
+    if( time_sw1 <= 0){
         status_sw1 = 0;
     }
-
     if (status_sw1 == 1) {
         percent = setTimeout(timer1, 1000 * interval);
-        howMuchTime-= interval;
-        let minut = Math.floor(howMuchTime/60);
-        let second = (howMuchTime) - minut*60 ;
-        timerLabel1.innerHTML = minut + ":" + second;
-        let offset = (circumference - (howMuchTime) / (firstTimer.howMuchTimes) * circumference);
-        circle.style.strokeDashoffset = offset;  
+        some(firstTimer, timerLabel1,howMuchTime);
+        time_sw1--;
     }
     checkAllBtn();
 }
 
 function timer2() {
-    if(secondHowMuchTime <= 0){
+    if( time_sw2 <= 0){
         status_sw2 = 0;
     }
     if (status_sw2 == 1) {
         secondPercent = setTimeout(timer2, 1000 * secondInterval);
-        secondHowMuchTime-= secondInterval;
-        time_sw2++;
-        let minut = Math.floor(secondHowMuchTime/60);
-        let second = (secondHowMuchTime) - minut*60 ;
-        timerLabel2.innerHTML = minut + ":" + second;
-        let secondOffset = (secondCircumference - (secondHowMuchTime) / (secondTimer.howMuchTimes) * secondCircumference);
-        secondCircle.style.strokeDashoffset = secondOffset;
+        some(secondTimer, timerLabel2, secondHowMuchTime);
     }
     checkAllBtn();
 }
+
+function some(val, timerLabel, times){
+        if( val.howMuchTimes <= 1){
+            status = 0;
+        }
+        const radius = val.circles.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+        val.circles.style.strokeDashoffset = circumference;
+        val.circles.style.strokeDasharray = `${circumference} ${circumference}`;
+        val.howMuchTimes-= val.timeInterval;
+        let minut = Math.floor(val.howMuchTimes/60);
+        let second = (val.howMuchTimes) - minut * 60 ;
+        timerLabel.innerHTML = minut + ":" + second;
+        let offset = (circumference - (val.howMuchTimes) / (times) * circumference);
+        val.circles.style.strokeDashoffset = offset;
+}
+
 function checkAllBtn() {
     if (status_sw1 == 1 || status_sw2 == 1) {
         moveAllBtn.value = "STOP";
