@@ -45,8 +45,13 @@
         this.tablo.innerHTML = minut + ":" + second;
     }
 }
+
+
 let firstTimer = new someTimer(30, 30, document.querySelector(".first_timer"), 1, document.getElementById("timerLabel1"), document.getElementById("start1"), document.querySelector('.progress-ring__circle'), document.querySelectorAll(".btn"));
-let secondTimer = new someTimer(6000, 6000, document.querySelector(".second_timer"), 2, document.getElementById("timerLabel2"), document.getElementById("start2"), document.querySelector('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
+let secondTimer = new someTimer(40, 40, document.querySelector(".second_timer"), 2, document.getElementById("timerLabel2"), document.getElementById("start2"), document.querySelector('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
+
+firstTimer.start_stop();
+secondTimer.start_stop();
 
 
 
