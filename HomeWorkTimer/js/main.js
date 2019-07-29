@@ -58,7 +58,7 @@ let firstTimer = new someTimer(30, 30, $(".first_timer"), 1, $("#timerLabel1"), 
 let secondTimer = new someTimer(40, 40, $(".second_timer"), 2, $("#timerLabel2"), $("#start2"), $('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
 
 firstTimer.start_stop();
-//secondTimer.start_stop();
+secondTimer.start_stop();
 
 
 
