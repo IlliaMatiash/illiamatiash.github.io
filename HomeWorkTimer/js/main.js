@@ -47,11 +47,18 @@
 }
 
 
-let firstTimer = new someTimer(30, 30, document.querySelector(".first_timer"), 1, document.getElementById("timerLabel1"), document.getElementById("start1"), document.querySelector('.progress-ring__circle'), document.querySelectorAll(".btn"));
-let secondTimer = new someTimer(40, 40, document.querySelector(".second_timer"), 2, document.getElementById("timerLabel2"), document.getElementById("start2"), document.querySelector('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
+//let firstTimer = new someTimer(30, 30, document.querySelector(".first_timer"), 1, document.getElementById("timerLabel1"), document.getElementById("start1"), document.querySelector('.progress-ring__circle'), document.querySelectorAll(".btn"));
+//let secondTimer = new someTimer(40, 40, document.querySelector(".second_timer"), 2, document.getElementById("timerLabel2"), document.getElementById("start2"), document.querySelector('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
+
+function $(elm) {
+  return document.querySelector(elm);
+}
+
+let firstTimer = new someTimer(30, 30, $(".first_timer"), 1, $("#timerLabel1"), $("#start1"), $('.progress-ring__circle'), document.querySelectorAll(".btn"));
+let secondTimer = new someTimer(40, 40, $(".second_timer"), 2, $("#timerLabel2"), $("#start2"), $('.progress-ring__circle__second'), document.querySelectorAll(".btn"));
 
 firstTimer.start_stop();
-secondTimer.start_stop();
+//secondTimer.start_stop();
 
 
 
