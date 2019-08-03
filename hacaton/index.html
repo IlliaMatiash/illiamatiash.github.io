@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #map {
+      height: 100%;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+      
+      <div class="container">
+          <form>
+            <input type="text" class="search">
+            <input type="button" value="Прокладіть шлях">
+        </form>
+      </div>
+       
+   
+    <div id="map">  </div>
+    <script src="https://momentjs.com/downloads/moment.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDz9nTD3ZvX96FT3OjKUJxBdrE4CAAeyQ&callback=initMap" async defer></script>
+    <script src="js/index.js" ></script>
+
+</body>
+</html>
