@@ -26,7 +26,20 @@ $(document).ready(function(){
     speed: 1200
  });
     
+    $("a.scrollto").click(function () {
+//        $(".nav-close").click(function(){
+        $(".full-nav").removeClass("open");
+//        });
+    var elementClick = '#' + $(this).attr("href").split("#")[1]
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+    return false;
 });
+    
+});
+
+
+
 
 
 

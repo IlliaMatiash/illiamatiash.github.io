@@ -18,6 +18,10 @@ html{
     box-sizing: border-box;
     font-size: 16px;
 }
+body {
+    font-family: Roboto, sans-serif;
+
+}
 
 .header{
     position: relative;
@@ -202,6 +206,7 @@ html{
 }
 
 .social-icons a:hover i{
+    
     color: #000;
     margin-top: -10px;
     border-color: #000;
@@ -340,6 +345,7 @@ video#herovideo{
     transition: all ease 1s;
     background: #000;
     border-radius: 0px;
+    
 }
 
 .bx-wrapper .social-icons a i{
@@ -450,7 +456,7 @@ ul.social-icons.list-inline{
 
 
 .main {
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
 }
 
 
@@ -462,6 +468,21 @@ ul.social-icons.list-inline{
 /*    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);*/
 }
 
+.aboutMe{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.hr{
+    width: 75%;
+    background: #333;
+    height: 1px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+
+}
+
 .profile{
     flex-basis: 35%;
     background-color: #39383a;
@@ -470,7 +491,7 @@ ul.social-icons.list-inline{
 }
 
 .profile-photo{
-    height: 230px;
+    height: 250px;
     background-image: url(../img/avatar.jpg); 
     background-size: cover;
 /*    background-position: top;*/
@@ -532,7 +553,7 @@ ul.social-icons.list-inline{
     padding: 2rem 2rem;
     flex-basis: 65%;
     background: white;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 
     
 }
@@ -596,6 +617,12 @@ ul.social-icons.list-inline{
     text-align: center;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+}
+
+.myProject{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 12px;
 }
 
 .name{
@@ -673,6 +700,9 @@ ul.social-icons.list-inline{
                    "1fr 1fr 1fr 1fr 1fr" 33.3333333333333vh
                    "1fr 1fr 1fr 1fr 1fr" 33.3333333333333vh;
     grid-gap: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+
 }
 
 .gallery .box{
@@ -712,7 +742,46 @@ ul.social-icons.list-inline{
     grid-column: span 2;
 }
 
+
+/*--------------Footer------------*/
+
+.footer{
+    background: url(../img/background.png);
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+    color: #d5d5d5;
+
+}
+
+.social{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.social a {
+    font-size: 3.5em;
+    /*    padding: 3rem;*/
+    /*    padding: 0;*/
+    margin: 5%;
+    color: #d5d5d5;
+
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
 @media(max-width: 991px){
+    
+    .profile-photo{
+        height: 500px;
+    }
      .gallery{
         
         grid-template: "1fr 1fr 1fr" 250px

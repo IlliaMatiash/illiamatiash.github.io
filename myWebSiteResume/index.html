@@ -14,11 +14,11 @@
  
 <!-- autoplay="autoplay"-->
   
-    <header class="header">
+    <header id = "home" class="header">
        <ul class="bxslider">
             <li>
                <div class="bg-video">
-                   <video playsinline="playsinline"  muted ="muted" autoplay="autoplay" loop="loop" id="herovideo">
+                   <video playsinline="playsinline"  muted ="muted" loop="loop" autoplay="autoplay" id="herovideo">
                        <source src="video/Animation%20Marvel_2%20(Converted).mp4">
                    </video>
 <!--
@@ -60,7 +60,7 @@
                            <p class="text-left">
                                I hope you enjoy my resume
                            </p>
-                           <button href="" id="vidBtn">Click Here</button>
+<!--                           <button href="" id="vidBtn">Click Here</button>-->
                        </div>
                    </div>
                    <ul class="social-icons list-inline">
@@ -72,6 +72,10 @@
                    </ul>
                 </div>
            </li>
+           
+           <a href="https://www.facebook.com/illya.matyash"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/il_l_ya.matyash/?hl=ru"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/IlliaMatiash"><i class="fa fa-git"></i></a>
            
            <li>
                <div class="bg-video">
@@ -86,7 +90,7 @@
                            <p class="text-left">
                                I hope you enjoy my resume
                            </p>
-                           <button href="" id="vidBtn">Click Here</button>
+<!--                           <button href="" id="vidBtn">Click Here</button>-->
                        </div>
                    </div>
                    <ul class="social-icons list-inline">
@@ -103,15 +107,13 @@
        
         <nav class="nav">
             <ul>
-<!--
-                <li><a href="">home</a></li>
-                <li><a href="">features</a></li>
--->
+<!--                <li><a href="">home</a></li>-->
+<!--                <li><a href="#aboutMe" class="scrollto">features</a></li>-->
 <!--
                 <li><a href="">team</a></li>
                 <li><a href="">work</a></li>
 -->
-                <li class="logo"><a href=""><img src="img/logo.png" alt="" class="white"><img src="img/logo.png" alt="" class="black"></a></li>
+                <li class="logo"><a class="scrollto" href="#home"><img src="img/logo.png" alt="" class="white"><img src="img/logo.png" alt="" class="black"></a></li>
 <!--
                 <li><a href="">pricinig</a></li>
                 <li><a href="">client</a></li>
@@ -126,14 +128,15 @@
     </header>
 <!--    <div style="height: 500px;"></div>-->
     <div class="full-nav">
-        <div class="logo"><a href=""><img src="img/logoTwo.png" alt=""></a></div>
+        <div class="logo"><a class="scrollto" href="#home"><img src="img/logoTwo.png" alt=""></a></div>
         
         <nav class="nav2">
             <ul>
-                <li><a href=""><span>01.</span>Home</a></li>
-                <li><a href=""><span>02.</span>features</a></li>
-                <li><a href=""><span>03.</span>team</a></li>
-                <li><a href=""><span>04.</span>work</a></li>
+                <li><a class="scrollto"
+                href="#home"><span>01. </span>Home</a></li>
+                <li><a class="scrollto" href="#aboutMe"><span>02. </span>About Me</a></li>
+                <li><a class="scrollto" href="#myGallery"><span>03. </span>My Gallery</a></li>
+<!--                <li><a class="scrollto" href=""><span>04.</span>work</a></li>-->
 <!--
                 <li><a href=""><span>05.</span>pricinig</a></li>
                 <li><a href=""><span>06.</span>client</a></li>
@@ -163,13 +166,18 @@
 
     <section class="main">
         <div class="container">
+           <div id = "aboutMe" class="aboutMe">
+               <h1>About me</h1>
+               <hr class="hr">
+           </div>
+           
             <div class="row">
                 <div class="profile col">
                     <div class="profile-photo"></div>
                     <div class="profile-info">
                         <h2 class="heading heading-light">Profile</h2>
                         <p class="profile-text">
-                            Hello! I`m Illia Matiash. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.
+                            Hello! I`m Illia Matiash. I recently finished front-end developer  courses in Cursor, I will be extremely happy if you gif me chance work with your team
                         </p>
                         <div class="contacts">
                             <div class="contacts-item">
@@ -228,46 +236,21 @@
                             <h1 class="name">Illia Matiash</h1>
                             <span class="position">Web Developer / Designer</span>
                         </div>
-                        <div class="experience">
+                        
+                        <div class="objective">
                             <h2 class="heading heading-dark">
-                                Experience
+                                Objective
                             </h2>
                             <ul class="list">
                                 <li class="list-item">
-                                    <h4 class="list-item__title">
-                                        Hexogan Web Development Company
-                                    </h4>
                                     <span class="list-item__date">
-                                        Jan 2016 - Oct 2016
+                                        I`m looking for a position in a company where I can use and improve my frontend developer skill.
+
                                     </span>
-                                    <p class="list-item__text">
-                                        Fleeing from the Cyllon tyranny the last Battlestar - Galactica - leads a rag-tag function fugitive fleet on a lonely quest - a shining planet know as Earth? Texas tea.
-                                    </p>
-                                </li>
-                                <li class="list-item">
-                                    <h4 class="list-item__title">
-                                        Hexogan Web Development Company
-                                    </h4>
-                                    <span class="list-item__date">
-                                        Jan 2016 - Oct 2016
-                                    </span>
-                                    <p class="list-item__text">
-                                        Fleeing from the Cyllon tyranny the last Battlestar - Galactica - leads a rag-tag function fugitive fleet on a lonely quest - a shining planet know as Earth? Texas tea.
-                                    </p>
-                                </li>
-                                <li class="list-item">
-                                    <h4 class="list-item__title">
-                                        Hexogan Web Development Company
-                                    </h4>
-                                    <span class="list-item__date">
-                                        Jan 2016 - Oct 2016
-                                    </span>
-                                    <p class="list-item__text">
-                                        Fleeing from the Cyllon tyranny the last Battlestar - Galactica - leads a rag-tag function fugitive fleet on a lonely quest - a shining planet know as Earth? Texas tea.
-                                    </p>
-                                </li>
+                                    
                             </ul>
                         </div>
+                        
                         <div class="educatio">
                             <h2 class="heading heading-dark">
                                 Education
@@ -275,17 +258,99 @@
                             <ul class="list">
                                 <li class="list-item">
                                     <h4 class="list-item__title">
-                                        Hexogan Web Development Company
+                                        Lviv Polytechnic National University 
                                     </h4>
                                     <span class="list-item__date">
-                                        Jan 2016 - Oct 2016
+                                        Sep 2013 - Dec 2018
                                     </span>
                                     <p class="list-item__text">
-                                        Fleeing from the Cyllon tyranny the last Battlestar - Galactica - leads a rag-tag function fugitive fleet on a lonely quest - a shining planet know as Earth? Texas tea.
+                                        Qualification: Master Degree Program Area “Automation and computer-integrated technologies”, Study Program “Automated Control of Technological Processes” 
                                     </p>
                                 </li>
                             </ul>
                         </div>
+                        
+                        <div class="qualification ">
+                            <h2 class="heading heading-dark">
+                                Qualification
+                            </h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item__title">
+                                        Frontend Developer course in Cursor Campaign, started on 03.06.2019 up to present my projects on the course: 
+                                     </h4>
+                                     <a class="myProject" href="https://illiamatiash.github.io/HomeWorAutoShop/">- Web site Auto Shop</a><br>
+                                     <a class="myProject" href="https://illiamatiash.github.io/HomeWork-Piano/">- Piano</a><br>
+                                     <a class="myProject" href="https://illiamatiash.github.io/HomeWorkTimer/">- Timer</a><br>
+                                     <a class="myProject" href="https://illiamatiash.github.io/HomeWorkAjax/">- Card list</a>
+<!--
+                                    <p class="list-item__text">
+                                        - Waiter <br>
+                                        - Bartender <br>
+                                        - Pizza Master <br>
+                                    </p>
+-->
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience">
+                            <h2 class="heading heading-dark">
+                                Work Experience
+                            </h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                    <h4 class="list-item__title">
+                                        Company “Ukraine-lv-tur” 
+                                    </h4>
+                                    <span class="list-item__date">
+                                         Lviv 2016 - present
+                                    </span>
+                                    <p class="list-item__text">
+                                        - Waiter <br>
+                                        - Bartender <br>
+                                        - Pizza Master <br>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="personalQualities">
+                            <h2 class="heading heading-dark">
+                                Personal Qualities
+                            </h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                   <h4 class="list-item__title">
+                                         My Personal Qualities:
+                                    </h4>
+                                    <p class="list-item__text">
+                                        - Сommunicable <br>
+                                        - Perfectionist <br>
+                                        - Punctual
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="specialSkills">
+                            <h2 class="heading heading-dark">
+                                Special skills
+                            </h2>
+                            <ul class="list">
+                                <li class="list-item">
+                                   <h4 class="list-item__title">
+                                         My Special skills:
+                                    </h4>
+                                    <p class="list-item__text">
+                                        - Language skills – Elementary, and now studying Pre-Intermediate with BBC <br>
+                                        - Was in the army<br>
+                                        - Hobbies: reading books, play basketball, going to the cinema
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
                         
                     </div>
                 </div>
@@ -297,51 +362,58 @@
      <!--    Gallery    -->
  
     <section>
-<!--       <div class="container">-->
-        <div class="gallery">
-            <div  class="box a">
-<!--                <img  src="./img/gallery_3.jpg" alt="">-->
-                <a href="img/gallery_3.jpg" data-lightbox="mygallery"><img  src="./img/gallery_3.jpg" alt=""></a>
-            </div>
-            <div class="box b">
-<!--                <img src="./img/gallery_2.jpg" alt="">-->
-                <a href="img/gallery_2.jpg" data-lightbox="mygallery"><img src="./img/gallery_2.jpg" alt=""></a>
-            </div>
-            <div class="box c">
-<!--                <img src="./img/gallery_3.jpg" alt="">-->
-                <a href="img/gallery_3.jpg" data-lightbox="mygallery"><img  src="./img/gallery_3.jpg" alt=""></a>
-                
-            </div>
-            <div class="box d">
-<!--                <img src="./img/gallery_4.jpg" alt="">-->
-               <a href="img/gallery_4.jpg" data-lightbox="mygallery"><img  src="./img/gallery_4.jpg" alt=""></a>
-            </div>
-            <div class="box e">
-<!--                <img src="./img/gallery_5.jpg" alt="">-->
-               <a href="img/gallery_5.jpg" data-lightbox="mygallery"><img  src="./img/gallery_5.jpg" alt=""></a>
-            </div>
-            <div class="box f">
-<!--                <img src="./img/gallery_6.jpg" alt="">-->
-               <a href="img/gallery_6.jpg" data-lightbox="mygallery"><img  src="./img/gallery_6.jpg" alt=""></a>
-            </div>
-            <div class="box g">
-<!--                <img src="./img/gallery_7.jpg" alt="">-->
-               <a href="img/gallery_7.jpg" data-lightbox="mygallery"><img  src="./img/gallery_7.jpg" alt=""></a>
-            </div>
-            <div class="box h">
-<!--                <img src="./img/gallery_8.jpg" alt="">-->
-               <a href="img/gallery_1.jpg" data-lightbox="mygallery"><img  src="./img/gallery_1.jpg" alt=""></a>
-            </div>
-            <div class="box i">
-<!--                <img src="./img/avatar.jpg" alt="">-->
-               <a href="img/avatar.jpg" data-lightbox="mygallery"><img  src="./img/avatar.jpg" alt=""></a>
-            </div>
-            <div class="box j">
-<!--                <img src="./img/gallery_2.jpg" alt="">-->
-               <a href="img/gallery_2.jpg" data-lightbox="mygallery"><img  src="./img/gallery_2.jpg" alt=""></a>
+       <div id = "myGallery" class="container">
+          <div class="aboutMe">
+               <h1>My Gallery</h1>
+               <hr class="hr">
+           </div>
+           
+           <div class="row">
+            <div class="gallery">
+                <div  class="box a">
+    <!--                <img  src="./img/gallery_3.jpg" alt="">-->
+                    <a href="img/gallery_3.jpg" data-lightbox="mygallery"><img  src="./img/gallery_3.jpg" alt=""></a>
+                </div>
+                <div class="box b">
+    <!--                <img src="./img/gallery_2.jpg" alt="">-->
+                    <a href="img/gallery_2.jpg" data-lightbox="mygallery"><img src="./img/gallery_2.jpg" alt=""></a>
+                </div>
+                <div class="box c">
+    <!--                <img src="./img/gallery_3.jpg" alt="">-->
+                    <a href="img/gallery_3.jpg" data-lightbox="mygallery"><img  src="./img/gallery_3.jpg" alt=""></a>
+
+                </div>
+                <div class="box d">
+    <!--                <img src="./img/gallery_4.jpg" alt="">-->
+                   <a href="img/gallery_4.jpg" data-lightbox="mygallery"><img  src="./img/gallery_4.jpg" alt=""></a>
+                </div>
+                <div class="box e">
+    <!--                <img src="./img/gallery_5.jpg" alt="">-->
+                   <a href="img/gallery_5.jpg" data-lightbox="mygallery"><img  src="./img/gallery_5.jpg" alt=""></a>
+                </div>
+                <div class="box f">
+    <!--                <img src="./img/gallery_6.jpg" alt="">-->
+                   <a href="img/gallery_6.jpg" data-lightbox="mygallery"><img  src="./img/gallery_6.jpg" alt=""></a>
+                </div>
+                <div class="box g">
+    <!--                <img src="./img/gallery_7.jpg" alt="">-->
+                   <a href="img/gallery_7.jpg" data-lightbox="mygallery"><img  src="./img/gallery_7.jpg" alt=""></a>
+                </div>
+                <div class="box h">
+    <!--                <img src="./img/gallery_8.jpg" alt="">-->
+                   <a href="img/gallery_1.jpg" data-lightbox="mygallery"><img  src="./img/gallery_1.jpg" alt=""></a>
+                </div>
+                <div class="box i">
+    <!--                <img src="./img/avatar.jpg" alt="">-->
+                   <a href="img/avatar.jpg" data-lightbox="mygallery"><img  src="./img/avatar.jpg" alt=""></a>
+                </div>
+                <div class="box j">
+    <!--                <img src="./img/gallery_2.jpg" alt="">-->
+                   <a href="img/gallery_2.jpg" data-lightbox="mygallery"><img  src="./img/gallery_2.jpg" alt=""></a>
+                </div>
+                </div>
             </div>
         </div>
-<!--        </div>-->
     </section>  
     
 <!--    <a href="img/gallery_3.jpg" data-lightbox="mygallery"></a>-->
@@ -349,9 +421,39 @@
 
       
       
-          <div style="height: 500px;"></div>
+<!--          <div style="height: 500px;"></div>-->
 
-       
+    <footer>
+        <div class="row footer">
+            <div id="contact" class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-12 social">
+                        <a href="https://www.facebook.com/illya.matyash"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/il_l_ya.matyash/?hl=ru"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/IlliaMatiash"><i class="fa fa-git"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; MatiashIllia_IlliaMatiash</h5>
+                    </div>
+                    
+<!--
+                    <div class="col-12">
+                        <img src="img/logoTwo.png" alt="">
+                    </div>
+-->
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </footer>
+      
+
        
     
     
