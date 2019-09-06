@@ -9,6 +9,9 @@ let indexFibonacci = 0;
 
 let numbersFibonacci = 0;
 
+let indexFibonaccinumbers = 0;
+
+
 let FibonacciNumbers = function(){
     if(indexFibonacci <= 2){
         if(indexFibonacci === 0){
@@ -32,37 +35,50 @@ let FibonacciNumbers = function(){
 Prev.addEventListener('click', () => {
     if(indexFibonacci === 0){
         alert("It`s firs Fibonacci numbers");
-        text.textContent = "";
+        text.textContent = "Fibonacci numbers: " + numbersFibonacci;
     }else {
         indexFibonacci -=1;
         FibonacciNumbers();
-        text.textContent = "";
+        if(indexFibonaccinumbers === 0){
+            text.textContent = "Fibonacci numbers: " + numbersFibonacci;
+        } else{
+            text.textContent = "index Fibonacci numbers: " + indexFibonacci;
+        }
     }
-    console.log(indexFibonacci)
 });
 
 Next.addEventListener('click', () => {
         indexFibonacci +=1;
         console.log(indexFibonacci);
         FibonacciNumbers();
-        text.textContent = "";
-    
+        if(indexFibonaccinumbers === 0){
+            text.textContent = "Fibonacci numbers: " + numbersFibonacci;
+        } else{
+            text.textContent = "index Fibonacci numbers: " + indexFibonacci;
+        }
 });
 
 
 Element.addEventListener('click', () => {
+        if(indexFibonaccinumbers > 0){
+            indexFibonaccinumbers -= 1;
+        }
         text.textContent = "Fibonacci numbers: " + numbersFibonacci;
 });
 
 
 Index.addEventListener('click', () => {
-        text.textContent = "index Fibonacci numbers: " + indexFibonacci;
+    if(indexFibonaccinumbers === 0){
+        indexFibonaccinumbers += 1;
+    }
+    text.textContent = "index Fibonacci numbers: " + indexFibonacci;
 });
 
 Reset.addEventListener('click', () => {
-        indexFibonacci = 0;
-        numbersFibonacci = 0;
-        text.textContent = "";
+    indexFibonacci = 0;
+    numbersFibonacci = 0;
+    indexFibonaccinumbers = 0;
+    text.textContent = "";
 });
 
 

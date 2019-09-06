@@ -24,6 +24,7 @@ body{
 
 
 .text{
+    height: 3rem;
     color: black;
     font-size: 50px;
     justify-content: center;
