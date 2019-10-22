@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+}
+
+.container {
+	width: 100%;
+	padding: 15px;
+ max-width: 797px;
+ margin: 0 auto;
+ box-shadow: 0 0 10px rgba(0,0,0,0.7);
+ border-radius: 5px;
+}
+
+.post__container {
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+	background: url(../background.jpg) center no-repeat ;
+	background-size: cover;
+	border-radius: 10px;
+}
+.form {
+	display: flex;
+	justify-content: space-around;
+	width: 500px;
+	padding: 10px 0;
+	justify-content: center;
+}
+
+input {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	
+}
+input:focus{
+	outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	padding: 1px;
+	margin: 0 10px;
+	font-size: 20px;
+	background: rgba(0,0,0,.5);
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+}
+
+.get__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 500px;
+	margin-top: 30px;
+	background: url(../background.jpg) center no-repeat ;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.card {
+	width: 23%;
+	height: 300px;
+	border-radius: 10px;
+	background: rgba(0,0,0, .5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
