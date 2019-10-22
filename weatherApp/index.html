@@ -10,25 +10,44 @@
 	<section class="main">
 		<div class="container">
 			<div class="post__container">
-				<form action="/" class="form">
-					<input list="citys" name="city" type="text" id="cityName">
+				<form class="form">
+					<input list="citys" name="city" type="text" id="cityName" placeholder="Select your city">
   			<datalist id="citys">
 		    
   			</datalist>
   		<button id="send" type = "button">Send</button> 
 				</form>
+
+				<button onclick="getLocation()">Your Location</button>
 			</div>
 			<div class="get__container">
-				<div class="card">
-					
-				</div>
-				<div class="card">
-					
-				</div>
-				<div class="card">
-					
-				</div>
-				<div class="card">
+				<div class="get__container-header">Your City</div>
+				<div class="get__container-content">
+					<div class="card">
+						<div class="card__content">
+							<div>Local IANA Timezone:</div>
+							<div class="timezone"></div>
+							<hr>
+							<div>Last observation time:</div>
+							<div class="last__Observation__Time"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card__content">
+							<div>Weather description:</div>
+							<div class="description"></div>
+							<hr>
+							<div class="icon"></div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card__content">
+							<div class="timezone__header">Temperature &degС:</div>
+							<div class="temperature"></div>
+						</div>
+					</div>
 					
 				</div>
 			</div>

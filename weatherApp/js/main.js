@@ -1507,33 +1507,69 @@ listCity.forEach(function(city){
 	let addOption = document.createElement('option');
 	addOption.innerHTML = city.city_name;
 	citys.append(addOption);
-} )
-
+})
 
 const nameEl = document.querySelector('#cityName');
 const btnSendCity = document.querySelector('#send');
+const getContainerHeader = document.querySelector('.get__container-header');
+const timezone = document.querySelector('.timezone');
+const lastObservationTime = document.querySelector('.last__Observation__Time');
+const description = document.querySelector('.description');
+const icon = document.querySelector('.icon');
+const img = document.createElement("img");
+const temperature = document.querySelector('.temperature');
 
-function getCity(){
-	return fetch(`https://api.weatherbit.io/v2.0/current?city=${nameEl.value},UA&key=decd910556e6453dbbf85c4c4c16f733`).then(response => {
+function getCity(element){
+	return fetch(element).then(response => {
 			return response.json();
   });
 };
 
+function render(element){
+	getContainerHeader.innerHTML= element.city_name;
+	timezone.innerHTML = element.timezone;
+	lastObservationTime.innerHTML = element.ob_time;
+	description.innerHTML = element.weather.description;
+	img.src = `icons/${element.weather.icon}.png`;
+	icon.append(img);
+	temperature.innerHTML = element.temp;
+}
+
 
 btnSendCity.addEventListener('click', ()=> {
-	// console.log(nameEl)
 	if(nameEl.value !== ""){
-		getCity().then(data => {
-			info = data.data[0];
-			console.log(info);
-		}) 
+		let API = `https://api.weatherbit.io/v2.0/current?city=${nameEl.value},UA&key=decd910556e6453dbbf85c4c4c16f733`;
+		getCity(API).then(data => {
+			let info = data.data[0];
+			render(info);
+		});
 	} else {
 			alert("Sorry")
 		}
-		
-	
-	
-})
+});
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    console.log("Geolocation is not supported by this browser.");
+  }
+}
+
+
+
+function showPosition(position) {
+	let latitude = position.coords.latitude;
+	let longitude = position.coords.longitude;
+	let API = `https://api.weatherbit.io/v2.0/current?lat=${latitude}&lon=${longitude}&key=decd910556e6453dbbf85c4c4c16f733`;
+		getCity(API).then(data => {
+			let info = data.data[0];
+			render(info);
+		});
+  console.log( "Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
+}
+
+
 
 
 

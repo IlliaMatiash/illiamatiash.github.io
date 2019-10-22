@@ -17,6 +17,7 @@ body {
 	padding: 15px;
  max-width: 797px;
  margin: 0 auto;
+ margin-top: 15px;
  box-shadow: 0 0 10px rgba(0,0,0,0.7);
  border-radius: 5px;
 }
@@ -28,17 +29,18 @@ body {
 	background: url(../background.jpg) center no-repeat ;
 	background-size: cover;
 	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(42, 139, 210, .7);
 }
 .form {
-	display: flex;
-	justify-content: space-around;
+	display: inline-block;
+	/*justify-content: space-around;*/
 	width: 500px;
 	padding: 10px 0;
-	justify-content: center;
+	
 }
 
 input {
-	width: 200px;
+	width: 250px;
 	height: 50px;
 	text-align: center;
 	font-size: 20px;
@@ -61,37 +63,63 @@ input::-webkit-outer-spin-button {
 }
 
 button {
-	width: 100px;
-	height: 50px;
+	width: 180px;
+	height: 52px;
 	padding: 1px;
 	margin: 0 10px;
 	font-size: 20px;
+	text-transform: uppercase;
 	background: rgba(0,0,0,.5);
 	border-radius: 10px;
 	border: none;
+	outline: none;
 	color: #fff;
 }
 
 .get__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
 	width: 100%;
 	height: 500px;
 	margin-top: 30px;
 	background: url(../background.jpg) center no-repeat ;
 	background-size: cover;
 	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(42, 139, 210, .7);
+}
+
+.get__container-header{
+	padding: 30px 0;
+	/*margin: 30px 0;*/
+	text-align: center;
+	font-size: 40px;
+	color: #fff; 
+}
+
+.get__container-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
 }
 
 .card {
-	width: 23%;
-	height: 300px;
+ /*display: flex;
+ align-items: center;*/
+ padding-top: 30px;
+ justify-content: center;
+	width: 31%;
+	margin: 0 1%;
+	/*height: 270px;*/
+	text-align: center;
+	color: #fff;
 	border-radius: 10px;
 	background: rgba(0,0,0, .5);
 }
 
+
+/*.card__content {
+	top: -50%;
+ transform: translateY(50%);
+}*/
 
 
 
