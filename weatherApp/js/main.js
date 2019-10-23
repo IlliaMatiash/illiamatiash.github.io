@@ -1543,29 +1543,39 @@ btnSendCity.addEventListener('click', ()=> {
 			let info = data.data[0];
 			render(info);
 		});
-	} else {
-			alert("Sorry")
-		}
+ } else {
+				alert("You do not choose a city please select a city");
+		 }
 });
+
+function apiForShowPosition(positionLat,positionLon){
+	let API = `https://api.weatherbit.io/v2.0/current?lat=${positionLat}&lon=${positionLon}&key=decd910556e6453dbbf85c4c4c16f733`;
+	getCity(API).then(data => {
+		let info = data.data[0];
+		render(info);
+	});
+}
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+  	if(localStorage.length > 0){
+  		let lat = localStorage.getItem('latitude');
+				let lon = localStorage.getItem('longitude');
+  		apiForShowPosition(lat,lon);
+  	}	else {
+    		navigator.geolocation.getCurrentPosition(showPosition);
+  			}
+  	
   } else { 
     console.log("Geolocation is not supported by this browser.");
   }
 }
-
-
-
 function showPosition(position) {
-	let latitude = position.coords.latitude;
-	let longitude = position.coords.longitude;
-	let API = `https://api.weatherbit.io/v2.0/current?lat=${latitude}&lon=${longitude}&key=decd910556e6453dbbf85c4c4c16f733`;
-		getCity(API).then(data => {
-			let info = data.data[0];
-			render(info);
-		});
+	localStorage.setItem('latitude', position.coords.latitude);
+	localStorage.setItem('longitude', position.coords.longitude);
+	let lat = localStorage.getItem('latitude');
+	let lon = localStorage.getItem('longitude');
+	apiForShowPosition(lat, lon);
   console.log( "Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
 }
 
