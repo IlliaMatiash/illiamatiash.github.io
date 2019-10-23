@@ -1522,7 +1522,9 @@ const temperature = document.querySelector('.temperature');
 function getCity(element){
 	return fetch(element).then(response => {
 			return response.json();
-  });
+  }).catch(error => {
+  	alert(`We can not download data, please check your internet connection`);
+  })
 };
 
 function render(element){
