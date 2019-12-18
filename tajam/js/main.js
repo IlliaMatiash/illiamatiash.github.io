@@ -41,6 +41,14 @@ $(function() {
          header.removeClass("fixed");
      }
  }
+
+ //    menu nav toggle
+ $("#nav_toggle").on("click", function(event){
+  event.preventDefault();
+  
+  $(this).toggleClass("active");
+  $("#nav").toggleClass("active");
+ });
  
 //    Smoot scroll
  
