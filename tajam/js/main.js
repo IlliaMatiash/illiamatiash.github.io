@@ -58,34 +58,6 @@ $(function() {
          scrollTop: blockOffset
      }, 500);
  });
- 
-//    menu nav toggle
- $("#nav_toggle").on("click", function(event){
-     event.preventDefault();
-     
-     $(this).toggleClass("active");
-     $("#nav").toggleClass("active");
- });
- 
-//    Collapse
- $("[data-collapse]").on("click", function(event){
-     event.preventDefault();
-     
-     let $this = $(this)
-     let blockId = $this.data('collapse');
-     $this.toggleClass("active");
-//        $(blockId).slideToggle();
-
- });
- 
-//    Slider
- $("[data-slider]").slick({
-     infinite: true,
-     fade: false,
-     slidesToShow: 1,
-     slidesToScroll: 1
- });
- 
 });
 
 /*--- Slick ---*/
