@@ -1,178 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- <link rel="stylesheet" href="slick/slick-theme.css"> -->
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/media-queries.css">
     <title>Photo time</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--   Header   -->
     <header class="header">
       <div class="container">
-          <div class="header__inner">
-               <nav class="nav">
+        <div class="small__width">
+          <a class="nav__link scrollto" href="#home"><span class="logoTwo"></span></a>
+          <a class="nav-icon" href="javascript:void(0);"><span></span><span></span><span></span></a>
+        </div>
 
-                      <a class="nav__link" href="#">Home</a>
-                      <a class="nav__link" href="#">Photoapp</a>
-                      <a class="nav__link" href="#"><img src="img/photoApp.png" alt="logo"></a>
-                      <a class="nav__link" href="#">Design</a>
-                      <a class="nav__link" href="#">Download</a>
-                </nav>
-           </div>
-       </div>
+        <nav class="nav__small-width">
+          <a class="nav__link scrollto" href="#home">Home</a>
+          <a class="nav__link scrollto" href="#photoapp">Photoapp</a>
+          <a class="nav__link scrollto" href="#design" >Design</a>
+          <a class="nav__link scrollto" href="#download" >Download</a>
+        </nav>
+
+        <nav class="nav" id="nav">
+          <a class="nav__link scrollto" href="#home">Home</a>
+          <a class="nav__link scrollto" href="#photoapp">Photoapp</a>
+          <a class="nav__link nav__link-logo scrollto" href="#home"><span class="logo"></span></a>
+          <a class="nav__link scrollto" href="#design">Design</a>
+          <a class="nav__link scrollto" href="#download">Download</a>
+        </nav>
+      </div>
     </header>
     <!--   </Header>   -->
-    
-    <div class="main">
-        <div class="container">
-            <div class="main__intro">
-                <h1 class="main__suptitle">your life, a photo</h1>
-                <h4 class="main__title">print your life in a simple photo</h4>
-                <a class="main__btn" href="#">get started</a>
-            </div>
-        </div>
-        
-        <div class="main__social">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-        </div>
-    </div>
-    
-<!--    Hand and Iphone   -->
 
-    <div class="rappresent">
-        <div class="container">
-            <div class="rappresent__content">
-              <div class="rappresent__info">
-                   <h3 class="all__title">
-                       Rappresent your life with a simple photo
-                   </h3>
-                    <p class="rappresent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-                    <p class="rappresent__text">sed do eiusmod tempor incididunt ut labore et dolore </p>
-                    <p class="rappresent__text">magna aliqua. Ut enim ad minim veniam, quis </p>
-                    <p class="rappresent__text">nostrud exercitation ullamco laboris nisi </p>
-                    <p class="rappresent__text">ut aliquip ex ea commodo consequat.</p>
-                    <div class="rappresent__btn">
-                        <a class="main__btn" href="#">get started</a>
-                    </div>
-                </div>
-                <div class="iphone">
-                    <img src="img/handAndIphone.png" alt="Iphone">
-                </div>
-            </div>
+    <div class="main" id="home">
+      <div class="container">
+        <div class="main__intro">
+          <h1 class="main__suptitle">your life, a photo</h1>
+          <h4 class="main__title">print your life in a simple photo</h4>
+          <a class="main__btn" href="#">get started</a>
         </div>
+      </div>
+
+      <div class="main__social">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+      </div>
     </div>
-<!--    Design   -->
-   
-   <div class="design">
-       <div class="container">
-          <div class="design__content">
-               <div class="design__iphone">
-                   <img class="design__foto" src="img/iphoneBlue.png" alt="Iphone">
-               </div>
-           
-               <div class="design__info">
-                   <div class="all__title">
-                       Design
-                   </div>
-                   <div class="design__text">
-                       <p class="rappresent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-                        <p class="rappresent__text">sed do eiusmod tempor incididunt ut labore et dolore </p>
-                        <p class="rappresent__text">magna aliqua. Ut enim ad minim veniam, quis </p>
-                        <p class="rappresent__text">nostrud exercitation ullamco laboris nisi </p>
-                        <p class="rappresent__text">ut aliquip ex ea commodo consequat.</p>
-                   </div>
-                   <div class="rappresent__btn">
-                        <a class="main__btn" href="#">Learn more</a>
-                    </div>
-                </div>
+
+    <!--    Hand and Iphone   -->
+
+    <div class="rappresent" id="photoapp">
+      <div class="container">
+        <div class="rappresent__content">
+          <div class="rappresent__info">
+            <h3 class="all__title">
+            Rappresent your life with a simple photo
+            </h3>
+            <p class="rappresent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+            <p class="rappresent__text">sed do eiusmod tempor incididunt ut labore et dolore </p>
+            <p class="rappresent__text">magna aliqua. Ut enim ad minim veniam, quis </p>
+            <p class="rappresent__text">nostrud exercitation ullamco laboris nisi </p>
+            <p class="rappresent__text">ut aliquip ex ea commodo consequat.</p>
+            <div class="rappresent__btn">
+              <a class="main__btn" href="javascript:void(0)">get started</a>
             </div>
-            
-       </div>
-   </div>
-   
-   
-<!--    Community   -->
+          </div>
+          <div class="iphone">
+            <div class="iphone__img">
+             <img src="img/handAndIphone.png" alt="Iphone">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    Design   -->
+
+    <div class="design" id="design">
+      <div class="container">
+        <div class="design__content">
+          <div class="data-slider">
+            <div>
+              <img class="design__photo" src="img/iphone/iphoneBlue.png" alt="">
+            </div>
+
+            <div>
+              <img class="design__photo " src="img/iphone/iphoneGreen.png" alt="">
+            </div>
+
+            <div>
+              <img class="design__photo " src="img/iphone/iphoneWhite.png" alt="">
+            </div>
+
+            <div>
+              <img class="design__photo " src="img/iphone/iphoneRed.png" alt="">
+            </div>
+
+            <div>
+              <img class="design__photo " src="img/iphone/iphoneYellow.png" alt="">
+            </div>
+          </div>
+
+          <div class="design__info">
+            <div class="all__title">
+              Design
+            </div>
+            <div class="design__text">
+              <p class="rappresent__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+              <p class="rappresent__text">sed do eiusmod tempor incididunt ut labore et dolore </p>
+              <p class="rappresent__text">magna aliqua. Ut enim ad minim veniam, quis </p>
+              <p class="rappresent__text">nostrud exercitation ullamco laboris nisi </p>
+              <p class="rappresent__text">ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="rappresent__btn">
+              <a class="main__btn" href="javascript:void(0);">Learn more</a>
+            </div>
+            <div class="photo__number">
+              01/05
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--    Community   -->
     <div class="community">
-        <div class="container">
-           <div class="community__content">
-                <div class="our__community">
-                    <img src="img/fpotoAppGreem.png" alt="logo">
-                    <h3 class="community__title">Our community</h3>
-                    <p class="community__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
+      <div class="container">
+        <div class="community__content">
+          <div class="our__community">
+            <img src="img/fpotoAppGreem.png" alt="logo">
+            <h3 class="community__title">Our community</h3>
+            <p class="community__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="community__galery">
+            <div class="galery">
+              <div class="autoplay">
+                <div>
+                  <img class="galery__img" src="img/community/galery_1.jpg" alt="">
                 </div>
-                <div class="community__galery">
-                    <img class="galery" src="img/galery_1.jpg" alt="">
-                    <img class="galery" src="img/galery_2.jpg" alt="">
 
+                <div>
+                  <img class="galery__img " src="img/community/galery_2.jpg" alt="">
                 </div>
+
+                <div>
+                  <img class="galery__img " src="img/community/galery_3.jpg" alt="">
+                </div>
+
+                <div>
+                  <img class="galery__img " src="img/community/galery_4.jpg" alt="">
+                </div>
+
+                <div>
+                  <img class="galery__img " src="img/community/galery_5.jpg" alt="">
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-<!--    Subscribe   -->
+
+    <!--    Subscribe   -->
     <div class="subscribe">
-        <div class="subscribe__title">
-            subscribe to us community
-        </div>
-        <div class="subscribe__form">
-            <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
-            <button class="subscribe__btn" type="submit">Subscribe</button>
-        </div>
+      <div class="subscribe__title">
+        subscribe to us community
+      </div>
+      <div class="subscribe__form">
+        <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
+        <button class="subscribe__btn" type="submit">Subscribe</button>
+      </div>
     </div>
-<!--    Download   -->
-    <div class="download">
-       <div class="container">
-            <h1 class="download__title">Download it</h1>
-            <p class="download__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="download__btn--all">
-                <div class="apple">
-                    <div class="download__text">Apple Store</div>
-                    <button class="download__btn"><i class="fa fa-apple"></i></button>
-                </div>
-                <div class="play">
-                    <div class="download__text">Play Store</div>
-                    <button class="download__btn"><i class="fa fa-android"></i></button>
-                </div>
+    <!--    Download   -->
+    <div class="download" id="download">
+      <div class="container">
+        <h1 class="download__title">Download it</h1>
+        <p class="download__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="download__btn--all">
+          <div class="apple">
+            <div class="download__text">Apple Store</div>
+            <button class="download__btn"><i class="fa fa-apple"></i></button>
+          </div>
+          <div class="play">
+            <div class="download__text">Play Store</div>
+            <button class="download__btn"><i class="fa fa-android"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    Footer   -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__text">
+            <div class="footer__abouttUs">
+              credits <span>|</span> privacy <span>|</span> our teams 
             </div>
+            <div class="footer__company">
+              Copyright by phototime - all right reserved
+            </div>
+          </div>
+          <div class="footer__logo">
+            <img src="img/fpotoAppGreem.png" alt="">
+          </div>
         </div>
-        
-    </div>
-    
-<!--    Footer   -->
-   
-   <footer>
-       <div class="container">
-           <div class="footer__content">
-               <div class="footer__text">
-                   <div class="footer__abouttUs">
-                       credits <span>|</span> privacy <span>|</span> our teams 
-                   </div>
-                   <div class="footer__company">
-                       Copyright by phototime - all right reserved
-                   </div>
-               </div>
-               <div class="footer__logo">
-                   <img src="img/fpotoAppGreem.png" alt="">
-               </div>
-           </div>
-       </div>
-   </footer>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</body>
+      </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+    <script src="slick/slick.js"></script> 
+    <script src="js/index.js"></script>
+  </body>
 </html>
