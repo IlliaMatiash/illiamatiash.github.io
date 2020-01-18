@@ -1,0 +1,146 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .registerChild:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .registerChild:last-child {
+    display: none;
+  }
+  .registerMain {
+    display: block;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .nav__link{
+    margin: 0;
+  }
+  .mainContent{
+    width: 70%;
+  }
+  .mainContent h1{
+    font-size: 30px;
+  }
+  .mainContent p{
+    font-size: 15px;
+  }
+  .holidays__background h2 {
+    padding-top: 20px
+  }
+  .holidays__icon {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+  .holidays__background h2 {
+    padding-top: 40px
+  }
+  .holidays__icon {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+  }
+  .holidays__content{
+  font-size: 15px;
+  }
+  .contactsBox {
+    padding-right: 10px;
+    width: 48%; 
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .section__header{
+    padding-top: 30px;
+  }
+  .registerMain{
+    display: flex;
+    justify-content: space-between;
+  }
+  .registerChild{
+    display: flex;
+  }
+  .registerChild:first-child {
+    width: auto;
+    justify-content: space-between;
+  }
+  .registerChild:last-child {
+    display: flex;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+  .nav__link{
+    margin: 0 1.9rem; 
+  }
+  .mainContent{
+    width: 70%;
+  }
+  .mainContent h1{
+    font-size: 45px;
+  }
+  .mainContent p{
+    font-size: 20px;
+  }
+  .div__input input{
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .mainContent{
+    width: 100%;
+  }
+  .mainContent h1{
+    font-size: 50px;
+  }
+
+  .mainContent p{
+    font-size: 25px;
+  }
+  .btnBox{
+    justify-content: center;
+  }
+  .btnBox .btn{
+    margin: 0 20px;
+  }
+  .holidays__background h2 {
+    padding-top: 50px
+  }
+  .holidays__icon {
+    width: 150px;
+    height: 150px;
+    font-size: 72px;
+  }
+  .contactsBox {
+    width: 45%;
+    padding-right: 40px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .contactsBox {
+    padding-right: 40px: 
+  }
+  .contactsBox {
+    width: 20%;
+    padding-right: 40px; 
+  }
+  .div__input input {
+    width: 60%;
+  }
+}
