@@ -1,0 +1,48 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+section {
+  padding: 7rem 0;
+}
+input,
+textarea {
+  outline: none;
+}
+button:active,
+button:focus {
+  outline: 0!important;
+  outline-color: transparent!important;
+  outline-width: 0!important;
+  outline-style: none!important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+@-webkit-keyframes autofill {
+  to {
+    color: #00e0d0;
+    background: rgba(0, 0, 0, 0);
+    
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
