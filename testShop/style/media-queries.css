@@ -1,3 +1,71 @@
+@media only screen and (min-width : 320px) and (max-width : 575px) {
+  .row{
+    margin: 0;
+  }
+  .sale {
+    display: block;
+  }
+  .discount{
+    margin: 10px 0;
+  }
+  .sale :nth-child(2){
+    margin: auto 0;
+  }
+  .content-img{
+    display: none;
+  }
+  .container-withBg {
+    margin-bottom: 20px;
+  }
+  .bigBlock{
+    width: 100%;
+  }
+  .bigBlock .about-sale-logo{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .smallBlock{
+    width: 100%;
+  }
+  .allSale-header {
+    margin: 10px 0 10px;
+  }
+  .one::before,
+  .two::before,
+  .three::before{
+
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width : 320px){
+  .nav-item{
+    text-align: center;
+  }
+  .nav-link{
+    display: inline-block;
+  }
+  .form-inline{
+    justify-content: space-around;
+  }
+  .content-block {
+    position: absolute;
+    margin-left: 20px;
+    width: 70%;
+  }
+  .nav-social .collapse:not(.show) {
+    display: block;
+  } 
+  .nav-social .navbar-nav {
+    flex-direction: inherit;
+  }
+  .support{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+ 
 @media (min-width: 576px) {
   .nav-item{
     text-align: center;
@@ -15,29 +83,28 @@
   .content-img img {
     margin-left: -20px;
   }
-  .bigBlock .about-sale-logo {
-    width: 60%;
+  .smallBlock{
+    width: 46%;
   }
-  .content-block {
-    position: absolute;
-    margin-left: 20px;
-    width: 70%;
-  } 
-  .nav-social .collapse:not(.show) {
-    display: block;
-  } 
-  .nav-social .navbar-nav {
-    flex-direction: inherit;
+  .bigBlock, .about-sale-logo{
+    width: 100%;
   }
-  .support{
-    display: flex;
-    justify-content: space-between;
+  .bigBlock .about-sale-logo{
+    width: 40%;
   }
+   
+  
 }
 
 @media (min-width: 768px) {
   .content-img img {
     margin-left: -50px;
+  }
+  .bigBlock{
+    width: 66%;
+  }
+  .smallBlock{
+    width: 32%;
   }
 
 }
