@@ -1,4 +1,4 @@
-@import url('vars.css');
+
 @media  (min-width : 320px) and (max-width : 575px) {
     .container{
         width: 90%;
