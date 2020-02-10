@@ -1,0 +1,147 @@
+@media only screen and (min-width : 320px) and (max-width : 575px) {
+  .row{
+    margin: 0;
+  }
+  .sale {
+    display: block;
+  }
+  .discount{
+    margin: 10px 0;
+  }
+  .sale :nth-child(2){
+    margin: auto 0;
+  }
+  .content-img{
+    display: none;
+  }
+  .container-withBg {
+    margin-bottom: 20px;
+  }
+  .bigBlock{
+    width: 100%;
+  }
+  .bigBlock .about-sale-logo{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .smallBlock{
+    width: 100%;
+  }
+  .allSale-header {
+    margin: 10px 0 10px;
+  }
+  .one::before,
+  .two::before,
+  .three::before{
+
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width : 320px){
+  .nav-item{
+    text-align: center;
+  }
+  .nav-link{
+    display: inline-block;
+  }
+  .form-inline{
+    justify-content: space-around;
+  }
+  .content-block {
+    position: absolute;
+    margin-left: 20px;
+    width: 70%;
+  }
+  .nav-social .collapse:not(.show) {
+    display: block;
+  } 
+  .nav-social .navbar-nav {
+    flex-direction: inherit;
+  }
+  .support{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+ 
+@media (min-width: 576px) {
+  .nav-item{
+    text-align: center;
+  }
+  .nav-link{
+    display: inline-block;
+  }
+  .form-inline{
+    justify-content: space-around;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    opacity: .9;
+  } 
+  .content-img img {
+    margin-left: -20px;
+  }
+  .smallBlock{
+    width: 46%;
+  }
+  .bigBlock, .about-sale-logo{
+    width: 100%;
+  }
+  .bigBlock .about-sale-logo{
+    width: 40%;
+  }
+   
+  
+}
+
+@media (min-width: 768px) {
+  .content-img img {
+    margin-left: -50px;
+  }
+  .bigBlock{
+    width: 66%;
+  }
+  .smallBlock{
+    width: 32%;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .collapse{
+    margin-left: 55px;
+  }
+  .collapse ul{
+    width: 462px;
+  }
+  .bigBlock .about-sale-logo {
+    width: 40%;
+  }
+  .content-block {
+    width: 60%;
+    margin-left: 80px;
+  }
+  .copyright-content{
+    display: flex;
+  }
+  .support a{
+    margin-left: 25px;
+  } 
+
+}
+
+@media (min-width: 1200px) {
+  .bigBlock{
+  }
+  .bigBlock .about-sale{
+    justify-content: normal;
+  }
+  .bigBlock .about-sale-content{
+    width: 40%;
+  }
+  .content-block {
+    width: 40%;
+  }
+}
