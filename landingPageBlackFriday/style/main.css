@@ -448,8 +448,16 @@ hr{
   background: var(--btnSecondColor);
 }
 .see-more{
+  /* display: flex; */
+  width: 81px;
+  /* cursor: pointer; */
+  
+}
+.see-more a{
   display: flex;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font-size: var(--seeMoreSizeC);
   color: var(--headerColor);
   transition: color .3s linear;
@@ -460,18 +468,16 @@ hr{
   align-items: center;
   width: 16px;
   height: 16px;
-  margin-left: 10px;
-  margin-top: 1px;
   border: 1px var(--headerColor) solid;
   transition: border-color .3s linear;
 }
-.arrow i {
+/* .arrow i {
   margin-top: 1px;
-}
-.see-more:hover{
+} */
+.see-more a:hover{
   color: var(--priceColor);
 }
-.see-more:hover > .arrow{
+.see-more a:hover > .arrow{
   border-color: var(--priceColor);
 }
 
