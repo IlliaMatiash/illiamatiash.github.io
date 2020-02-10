@@ -1,5 +1,59 @@
-@import url('vars.css');
+@font-face {
+  font-family: 'Roboto regular';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Arial';
+  src: url(../fonts/Arial.ttf);
+}
 
+:root {
+  /* fonts */
+  --headerFonts: 'Roboto Bold', sans-serif;
+  --contentFonts: 'Roboto regular', sans-serif;
+  --priceFonts: 'Arial', sans-serif;
+  
+  /*  M - mobile, C - computer  */
+  /* font-size width > 768px*/
+  --mainHeaderSizeC: 81px;
+  --sectionHeaderSizeC: 51px;
+  --boxHeaderSizeC: 16px;
+  --contentSizeC: 14px;
+  --offerSizeC: 20px; 
+  --navLinkC: 14px;
+  --lastPriceSizeC: 14px;
+  --newPriceSizeC: 20px;
+  --btnByNowC: 14px;
+  --btnGoToCategorySizeC: 20px;
+  --seeMoreSizeC: 12px;
+
+  /* font-size width < 768px*/
+  --mainHeaderSizeM: 62px;
+  --sectionHeaderSizeM: 32px;
+  --boxHeaderSizeM: 22px;
+  --offerSizeM: 20px;
+  --navLinkM: 20px;
+  --lastPriceSizeM: 18px;
+  --newPriceSizeM: 24px;
+  --btnByNowM: 22px;
+  --btnGoToCategorySizeM: 24px;
+  --exclusiveDiscounts: 32px;
+
+  /* Color */
+  --mainHeaderColor: #fff;
+  --headerColor: #333;
+  --headerMenuColor: #fff;
+  --contentColor: #666;
+  --priceColor: #ff3838;
+  --btnFirstColor: #1a1a1a;
+  --btnSecondColor: #2b2b2b;
+  --iconsColor: #ee6600;
+  --overTextColor: #595959;
+}
 *,
 *:before,
 *:after {
