@@ -1,0 +1,169 @@
+/* css style */
+/* The main gonfiguration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --site-max-width: 1300px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 15px 0 15px 0;
+}
+
+h2 {
+  margin: 10px 0 10px 0;
+}
+
+p {
+  margin: 5px 0 5px 0;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+body {
+  background-image: url(images/sale_25561_article_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 20px 20px;
+  max-width: var(--site-max-width);
+}
+
+.section-blur {
+  padding: 20px 0 20px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.img img {
+  border-radius: 50%;
+}
+
+/*  */
+.main {
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .container {
+  justify-content: center;
+}
+
+.box {
+  width: 40%;
+  padding: 10px 10px;
+  margin: 20px 0 20px 0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  width: 130px;
+  height: 50px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+  .section-blur {
+    padding: 20px 20px 20px 20px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer a {
+    margin: 20px;
+  }
+}
